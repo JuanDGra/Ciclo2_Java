@@ -3,6 +3,7 @@ public class App {
         System.out.println("Hello, World!");
         int numero = 56;
         perro pepe = new perro();
-        System.out.println(pepe.perseguirCola);
+        pepe.setNombre("Pepe");
+        System.out.println(pepe.getNombre());
     }
 }
