@@ -1,23 +1,22 @@
-public class perro {
-    // Atributos
-     // public, private. protected
-    private boolean perseguirCola = true;
+public class Perro extends Canino{
+    //Atributos
+    // public, private, protected
+    private final boolean PERSEGUIR_COLA = true;
     private String orinar;
     private String nombre;
     private int edad;
-
-    // Constructor -- Es el método llamado cuando se crea una nueva
+    public static int contadorPerros=0;
+    public static final String FormaDeDientes = "Colmillos";
+    //Constructor
     // def __init__():
-    public perro(String nombre, int edad, String orinar, boolean perseguirCola) {
+    public Perro(String nombre, int edad, String orinar){
+        super("Awwwwww", "Omnivoros");
         this.nombre = nombre;
         this.edad = edad;
-        this.orinar = orinar;
-        this.perseguirCola = perseguirCola;
+        this.orinar = orinar;    
+        contadorPerros++;    
     }
-
-    // Métodos
-
-
+    //Metodos
     public String getNombre() {
         return nombre;
     }
@@ -29,17 +28,15 @@ public class perro {
     }
     public void setOrinar(String orinar) {
         this.orinar = orinar;
-    }
-    public boolean isPerseguirCola() {
-        return perseguirCola;
-    }
-    public void setPerseguirCola(boolean perseguirCola) {
-        this.perseguirCola = perseguirCola;
-    }
+    }    
     public int getEdad() {
         return edad;
     }
     public void setEdad(int edad) {
         this.edad = edad;
+    }
+
+    public static void oler(){
+        System.out.println("Sniff");
     }
 }

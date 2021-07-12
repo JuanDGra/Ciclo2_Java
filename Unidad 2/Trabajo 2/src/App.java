@@ -1,12 +1,13 @@
+import javax.swing.JOptionPane;
+
 public class App {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        perro pepe = new perro("Pepe", 5, "Alza la pata", true);
-        perro reina = new perro("Reina", 2, "Sentada", false);
-        pepe.setNombre("Pepe");
-        System.out.println(reina.getNombre());
-        System.out.println(reina.getEdad());
-        System.out.println(pepe.getNombre());
-        System.out.println(pepe.getEdad());
+    public static void main(String[] args) throws Exception {                
+        Perro perro1 = new Perro("Pepe",4,"Alza la pata");
+        Perro perro2 = new Perro("Sasha",3,"Sentada");
+        System.out.println(perro1.getNombre());
+        System.out.println(perro2.getNombre());
+        JOptionPane.showMessageDialog(null, "Misiontic","Un titulo", JOptionPane.ERROR_MESSAGE);
+        System.out.println(perro1.getFormaDeAlimentacion());
+        
     }
 }
