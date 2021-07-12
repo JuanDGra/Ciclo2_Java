@@ -4,7 +4,7 @@ public class Lobo extends Canino {
     private String pelaje;
     private String horarioCaza;
 
-    public Lobo(){
+    public Lobo() {
         super("AAAAAAAWWWWWWWW","carnivoros");
     }
 
