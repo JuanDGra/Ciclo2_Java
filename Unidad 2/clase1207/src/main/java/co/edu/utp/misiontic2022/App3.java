@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 import java.util.PriorityQueue;
 import java.util.Queue;
 

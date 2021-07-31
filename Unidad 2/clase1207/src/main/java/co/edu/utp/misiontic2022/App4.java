@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,14 +25,14 @@ public class App4 {
 
         //System.out.println(contenedor2.get(coordenada2).getTipoFicha());
 
-        var llaves = contenedor2.keySet();
+        /* var llaves = contenedor2.keySet();
 
         for (CoordenaAjedrez coordenada: llaves){
             PiezaAjedrez pieza = contenedor2.get(coordenada);
             System.out.println("Coordenada:" + coordenada.getCoordenada1()+
             coordenada.getCoordenada2()+" -> Valor:" + pieza.getTipoFicha()+
             pieza.getColor());
-        }
+        } */
 
     }
 }

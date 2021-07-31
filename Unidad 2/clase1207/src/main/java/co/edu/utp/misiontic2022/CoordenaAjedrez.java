@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 public class CoordenaAjedrez {
     private Coordenadas coordenada1;
     private int coordenada2;

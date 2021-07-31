@@ -1,4 +1,4 @@
-package co.reto.semana1;
+/* package co.reto.semana1;
 
 public class App 
 {
@@ -8,4 +8,4 @@ public class App
         ProyeccionPublica resultadoInversion2 = new ProyeccionPublica();
         System.out.println(resultadoInversion2.compararInversion(11,2005000.0,4));
     }
-}
+} */

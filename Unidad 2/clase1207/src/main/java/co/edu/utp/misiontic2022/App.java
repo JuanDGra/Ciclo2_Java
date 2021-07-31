@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 import java.util.ArrayList;
 
 //import java.util.*;
@@ -34,9 +36,9 @@ public class App
             System.out.println(elemento);
         }*/
 
-        lista.forEach((elemento) -> {
-            System.out.println(elemento);
-        });
+        // lista.forEach((elemento) -> {
+        //    System.out.println(elemento);
+        // });
 
         //Python Lista tuplas diccionario sets
         

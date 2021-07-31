@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 public class PiezaAjedrez {
     private String tipoFicha;
     private String color;

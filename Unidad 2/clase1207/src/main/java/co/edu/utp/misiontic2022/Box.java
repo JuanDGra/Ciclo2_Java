@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 public class Box <T>{
     private T tipo;
 

@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
