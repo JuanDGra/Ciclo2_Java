@@ -1,29 +1,26 @@
-package co.edu.utp.misiontic2022;
+public class PiezaAjedrez {
+    private String tipoFicha;
+    private String color;
 
-public class ParejaOrdenada <K,V> implements Pareja<K,V> {
-
-    private K key;
-    private V value;
-
-    public ParejaOrdenada(K key, V value){
-        this.key = key;
-        this.value = value;
+    public PiezaAjedrez(String tipoFicha, String color){
+        this.tipoFicha = tipoFicha;
+        this.color = color;
     }
 
-    @Override
-    public K getKey() {        
-        return key;
+    public String getColor() {
+        return color;
     }
 
-    @Override
-    public V getValue() {        
-        return value;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public static <K,V> boolean comparar(Pareja<K,V> p1,
-        Pareja<K,V> p2){
-            return p1.getKey().equals(p2.getKey()) &&
-            p1.getValue().equals(p2.getValue());
-        }
-    
+    public String getTipoFicha() {
+        return tipoFicha;
+    }
+
+    public void setTipoFicha(String tipoFicha) {
+        this.tipoFicha = tipoFicha;
+    }
+
 }

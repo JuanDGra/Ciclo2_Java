@@ -1,5 +1,3 @@
-package co.edu.utp.misiontic2022;
-
 public class Abuela {
 
     public String caminar(Double distanciaMetros){

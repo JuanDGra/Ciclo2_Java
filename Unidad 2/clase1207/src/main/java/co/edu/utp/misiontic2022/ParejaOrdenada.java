@@ -1,5 +1,3 @@
-package co.edu.utp.misiontic2022;
-
 public class ParejaOrdenada <K,V> implements Pareja<K,V> {
 
     private K key;

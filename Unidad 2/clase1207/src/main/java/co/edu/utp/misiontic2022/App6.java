@@ -1,5 +1,3 @@
-package co.edu.utp.misiontic2022;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

@@ -1,5 +1,3 @@
-package co.edu.utp.misiontic2022;
-
 public enum Coordenadas {
     A,
     B,
