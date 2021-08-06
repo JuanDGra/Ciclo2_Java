@@ -1,3 +1,5 @@
+package co.edu.utp.misiontic2022;
+
 public class BoxBounds <T extends Number>{
     
     private T tipo;
