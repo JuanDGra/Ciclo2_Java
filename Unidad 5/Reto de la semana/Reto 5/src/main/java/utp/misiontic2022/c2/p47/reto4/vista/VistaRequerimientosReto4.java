@@ -11,7 +11,7 @@ public class VistaRequerimientosReto4 {
 
     public static final ControladorRequerimientos controlador = new ControladorRequerimientos();
 
-    public static void requerimiento1(){
+    /* public static void requerimiento1(){
         try {
             System.out.println("Conocer el id de las compras que si estén pagadas");
             ArrayList<Requerimiento_1> resultado = controlador.consultarRequerimiento1();
@@ -22,7 +22,7 @@ public class VistaRequerimientosReto4 {
         } catch (Exception e) {
             System.err.println(e);
         }
-    }
+    } */
 
     public static void requerimiento2(){
         try {

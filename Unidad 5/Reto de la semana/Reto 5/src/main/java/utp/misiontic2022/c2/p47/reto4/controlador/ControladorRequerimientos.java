@@ -1,12 +1,12 @@
 package utp.misiontic2022.c2.p47.reto4.controlador;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
 import utp.misiontic2022.c2.p47.reto4.modelo.dao.Requerimiento_1Dao;
 import utp.misiontic2022.c2.p47.reto4.modelo.dao.Requerimiento_2Dao;
 import utp.misiontic2022.c2.p47.reto4.modelo.dao.Requerimiento_3Dao;
-import utp.misiontic2022.c2.p47.reto4.modelo.vo.Requerimiento_1;
 import utp.misiontic2022.c2.p47.reto4.modelo.vo.Requerimiento_2;
 import utp.misiontic2022.c2.p47.reto4.modelo.vo.Requerimiento_3;
 
@@ -15,7 +15,7 @@ public class ControladorRequerimientos {
     
     Requerimiento_1Dao dao = new Requerimiento_1Dao();
     
-    public ArrayList<Requerimiento_1> consultarRequerimiento1() throws SQLException {
+    public ResultSet consultarRequerimiento1() throws SQLException {
         return dao.comprasPagadas();
     }
 

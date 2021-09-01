@@ -10,14 +10,14 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println("Requerimiento 1");
-        VistaRequerimientosReto4.requerimiento1();
+        /* System.out.println("Requerimiento 1");
+        VistaRequerimientosReto4.requerimiento1(); */
 
-        System.out.println("\nRequerimiento 2");
+        /* System.out.println("\nRequerimiento 2");
         VistaRequerimientosReto4.requerimiento2();
 
         System.out.println("\nRequerimiento 3");
-        VistaRequerimientosReto4.requerimiento3();
+        VistaRequerimientosReto4.requerimiento3(); */
         
     }
 }

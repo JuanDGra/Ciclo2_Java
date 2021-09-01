@@ -4,12 +4,40 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 
 import utp.misiontic2022.c2.p47.reto4.modelo.vo.Requerimiento_1;
 import utp.misiontic2022.c2.p47.reto4.util.JDBCUtilities;
 
 public class Requerimiento_1Dao {
+
+    private int ID_Compra;
+    private String Proveedor;
+    private String Pagado;
+
+    public int getID_Compra() {
+        return ID_Compra;
+    }
+
+    public void setID_Compra(int iD_Compra) {
+        ID_Compra = iD_Compra;
+    }
+
+    public String getPagado() {
+        return Pagado;
+    }
+
+    public void setPagado(String pagado) {
+        Pagado = pagado;
+    }
+
+    public String getProveedor() {
+        return Proveedor;
+    }
+
+    public void setProveedor(String proveedor) {
+        Proveedor = proveedor;
+    }
+
     
     Connection conexion;
 
@@ -22,17 +50,11 @@ public class Requerimiento_1Dao {
         }
     }
 
-    public ArrayList<Requerimiento_1> comprasPagadas() throws SQLException {
-        ArrayList <Requerimiento_1> lista = new ArrayList<Requerimiento_1>();
+    public ResultSet comprasPagadas() throws SQLException {
         String sql = "SELECT ID_Compra FROM Compra WHERE Proveedor = 'JUMBO' and Pagado = 'No'";
         Statement stmt = conexion.createStatement();
         ResultSet resultado = stmt.executeQuery(sql);
-        while(resultado.next()){
-            Requerimiento_1 compra = new Requerimiento_1();
-            compra.setID_Compra(resultado.getInt(1));
-            lista.add(compra);
-        }
-        return lista;
+        return resultado;
     }
 }
 
